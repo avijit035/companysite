@@ -86,3 +86,7 @@ Route::get('/admin_blog', 'BlogController@blog')->name('admin.blog');
 Route::post('/add_blog', 'BlogController@add_blog')->name('add_blog');
 Route::post('/update_blog', 'BlogController@update_blog')->name('update_blog');
 Route::get('/delete_blog/{id}', 'BlogController@delete_blog')->name('delete_blog');
+
+Route::get('/admin_site_name', 'SiteinfoController@site_name')->name('admin.site_name');
+Route::post('/admin_site_name', 'SiteinfoController@update_site_name')->name('update_site_name');
+Route::get('/admin_site_name/{id}', 'SiteinfoController@delete_site_name')->name('delete_site_name');

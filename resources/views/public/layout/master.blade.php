@@ -34,7 +34,8 @@
 							<span class="icon-bar"></span>
 						</button>
             <div class="navbar-brand">
-              <a href="{{route('index')}}"><h1><span>Com</span>pany</h1></a>
+            <!--  <a href="{{route('index')}}"><h1><span>Com</span>pany</h1></a> -->
+              <a href="{{route('index')}}"><h1><span>{{$site_name->title}}</span>{{$site_name->details}}</h1></a>
             </div>
           </div>
 

@@ -63,4 +63,25 @@ class SiteinfoController extends Controller
       $info->save();
       return back();
     }
+
+    public function site_name(){
+      return view('admin.site_name');
+    }
+    public function update_site_name(Request $request)
+    {    
+      $info=Siteinfo::find($request->id);
+        $info->title=$request->title;
+        $info->details=$request->details;
+        $info->save();
+      return back();
+    }
+
+    public function delete_site_name($id)
+    {
+        $info=Siteinfo::find($id);
+        $info->title="";
+        $info->details="";
+      $info->save();
+      return back();
+    }
 }

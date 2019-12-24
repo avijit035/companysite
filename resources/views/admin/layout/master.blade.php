@@ -39,15 +39,17 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
       </li>
+      <!--
       <li class="nav-item d-none d-sm-inline-block">
         <a href="index3.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
       </li>
+    -->
     </ul>
 
-    <!-- SEARCH FORM -->
+    <!-- SEARCH FORM
     <form class="form-inline ml-3">
       <div class="input-group input-group-sm">
         <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
@@ -58,6 +60,7 @@
         </div>
       </div>
     </form>
+    -->
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
@@ -130,7 +133,7 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-    
+
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
@@ -171,6 +174,13 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('admin.site_name')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Website Name</p>
+                </a>
+              </li>
+
               <li class="nav-item">
                 <a href="{{route('admin.blog_categories')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>

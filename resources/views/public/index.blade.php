@@ -1,5 +1,6 @@
 @extends('public.layout.master')
 @section('content')
+<!--
 <section id="main-slider" class="no-margin">
    <div class="carousel slide">
      <div class="carousel-inner">
@@ -23,12 +24,13 @@
            </div>
          </div>
        </div>
-       <!--/.item-->
+
      </div>
-     <!--/.carousel-inner-->
+
    </div>
-   <!--/.carousel-->
+
  </section>
+-->
  <!--/#main-slider-->
 
  <div class="feature">
@@ -53,7 +55,7 @@
  <div class="about">
    <div class="container">
      <div class="col-md-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-       <h2>about us</h2>
+       <h2>About Us</h2>
        <img src="images/{{$about_us->image}}" class="img-responsive" />
 
      </div>
